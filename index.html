@@ -1,0 +1,219 @@
+<html>
+
+<head>
+    <title>Video Cards</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .navbar-item {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar {
+            /* float: right; */
+            padding: 10px;
+            text-align: right;
+        }
+
+        .navbar-item:hover {
+            border-radius: 50px;
+            background-color: white;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        .video-cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            width: 90%;
+            max-width: 1200px;
+            align-self: center;
+            /* align-items: center; */
+
+        }
+
+        .video-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+            width: 300px;
+            box-shadow: 0px 0px 50px 33px rgba(0, 255, 255, 0.2);
+            align-items: center;
+            text-align: center;
+            position: relative;
+            /* Needed for absolute positioning of h3 */
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-card h3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin: 0;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="home.html" class="navbar-item">Home</a>
+        <a href="about.html" class="navbar-item">About</a>
+        <a href="singers.html" class="navbar-item">Singers</a>
+        <a href="songs.html" class="navbar-item">Songs</a>
+        <a href="login.html" class="navbar-item">Login</a>
+    </div>
+
+    <h1>Video Gallery</h1>
+    <div class="video-cards-container">
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/daLiRzjBSo0" allow="autoplay; fullscreen"
+                allowfullscreen></iframe>
+            <h3>ဒီရေဒီလှေ - လေးဖြူ</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/EMmEOFh3gP4"
+                title="R ဇာနည် - ဖြတ် (R Zar Ni)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>ဖြတ် - Rဇာနည်</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/vkWDR6-00HE"
+                title="ဇော်ပိုင် - ရင်ခုန်ရလွန်းလို့ [Live]" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>ရင်ခုန်ရလွန်းလို့ - ဇော်ပိုင်</h3>
+        </div>
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/m3zUfHUM9ZI"
+                title="မျိူးကြီး - လမိုက်ည (Myo Gyi)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>လမိုက်ည - မျိုးကြီး</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/e04mUF-MkuA"
+                title="ဝိုင်ဝိုင်း - အိမ်လွမ်းသူ (Y Wine )" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>အိမ်လွမ်းသူ - ဝိုင်ဝိုင်း</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="687" height="515" src="https://www.youtube.com/embed/fu3YIu2SyTA" title="အငဲ - အကြည့် (Live)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>>
+            <h3>အကြည့် - အငဲ</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/vFwihSLcDx8"
+                title="အငဲ - ကမ်းမရှိတဲ့အချစ် (Live)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>ကမ်းမရှိတဲ့အချစ် - အငဲ</h3>
+        </div>
+        `
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/SkOzgTJznQw"
+                title="လေးဖြူ , အငဲ - နူးညံ့တဲ့အမိန့်တော်အတိုင်း (Live)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>နူးညံ့တဲ့အမိန့်တော်အတိုင်း - လေးဖြူ+အငဲ</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="914" height="514" src="https://www.youtube.com/embed/W40rdzUVdvs?list=RDW40rdzUVdvs"
+                title="R ဇာနည် - ယဉ်ယဉ်လေးရူး (R Zar Ni)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>ယဉ်ယဉ်လေးရူး - Rဇာနည်</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/pERJFRrU-cs"
+                title="မျိုးကြီး + လေးဖြူ +အငဲ - ဒီဇင်ဘာ (Official MV)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>ဒီဇင်ဘာ - လေးဖြူ+အငဲ+မျိုးကြီး</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/Au7uOCe9XF4"
+                title="မျိူးကြီး -  အဆိပ်ခွက် (Myo Gyi)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>အဆိပ်ခွက် - မျိုးကြီး</h3>
+        </div>
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/hQ7UiIfWv-o"
+                title="ဇော်ပိုင် - ပန်းနုချစ်နှုတ်ခမ်း [Live]" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>ပန်းနုချစ်နှုတ်ခမ်း - ဇော်ပိုင်</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/YEhe8mZesQE"
+                title="ဝိုင်ဝိုင်း - စည်း (Y Wine)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/pYGnsYrU_ak"
+                title="Iron Cross Group - အသစ်ကမ္ဘာသို့ [Live]" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>အသစ်ကမ္ဘာသို့ - အဖွဲ့</h3>
+        </div>
+
+        <div class="video-card">
+            <iframe width="916" height="515" src="https://www.youtube.com/embed/zM38k3ABc24"
+                title="လေးဖြူ - အလင်းရောင် ( Lay Phyu )" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>အလင်းရောင် - လေးဖြူ</h3>
+        </div>
+    </div>
+</body>
+
+</html>
